@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+
+
+<!-- Link a Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+<!-- Estilos a CSS -->
+<link rel="stylesheet" href="../CSS/esiloLanding.css">
+
+</head>
+<body>
+
+    <!-- ojo con este nav que me queda un modal abierto con un gris opacado y no sé por qué -->
+<div id="Inicio" class="container"></div>
+    <!-- Barra de Navegación -->
+    <nav  class="navbar fixed-top bg-black">
+        <div class="container-fluid">
+            <a style="color: white" class="navbar-brand fs-2" href="#"><img src="IMG\logo2.jpg" style="height: 10vh"
+                    alt="Logo-cervecería"> Cervecería
+                NORDOESTE<!-- Puedo escribir acá la cervecería y estaría al lado del logo --></a>
+            <button class="navbar-toggler bg-secondary " type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cervecería Nordoeste</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Mision">Misión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Carta
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#Carta">Cervezas</a></li>
+                                <li><a class="dropdown-item" href="#Carta">Platos</a></li>
+                                <li>
+                                <li><a class="dropdown-item" href="#Carta">Tragos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#Carta">Recomendaciones Especiales</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Separador de márgen (debería probar un mb para nav o mt para video) -->
+    <div>
+        <p class="m-5"></p>
+    </div>
+    <!-- Video de fondo en portada -->
+    <!-- <div>
+        <video id="video-portada" class="w-100 bg-black" autoplay loop muted>
+            <source src="../IMG/video1.mp4" type="video/mp4" />
+        </video>
+    </div> -->
+
+    <div class="video-container mb-5">
+        <video id="video-portada" class="bg-black" autoplay loop muted poster="">
+            <source src="IMG\video3.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <div class="header">
+        <h1>La experiencia es todo</h1>
+        <p class="fs-3 m-2 mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem amet corrupti magni tenetur beatae quisquam, enim nesciunt asperiores fuga voluptatum minima, adipisci, quos temporibus ut accusantium aliquam laborum facilis natus!</p>
+        <button id="botonPortada" class="btn btn-secondary">Conoce más</button>
+    </div>
+
+<hr  style="color: black">
+
+<div  id="Nosotros" class="container-fluid centradoPersonal">
+    <p class="fs-1">Nuestro equipo</p>
+    <p class="fs-3 m-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit, labore, porro nam dolorem voluptatibus consequatur, ullam facere pariatur asperiores possimus nisi sed? Eius expedita quisquam modi! In, nihil maiores.</p>
+    <div class="row">
+        <div class="col-4">
+            <img class="img-circle" src="IMG\selfie1.png" alt="">
+            <h3>Nombre</h3>
+            <h5 style="color: grey;">Cocina</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, quas!</p>
+        </div>
+        <div class="col-4">
+            <img class="img-circle" src="IMG\selfie1.png" alt="">
+            <h3>Nombre</h3>
+            <h5 style="color: grey;">Atención</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dignissimos doloribus doloremque sequi incidunt porro?</p>
+        </div>
+        <div class="col-4">
+            <img class="img-circle" src="IMG\selfie1.png" alt="">
+            <h3>Nombre</h3>
+            <h5 style="color: grey;">Gerencia</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur veritatis ipsa ex. Quis quibusdam earum ab ipsa rerum placeat voluptatem modi aperiam ut impedit ipsum accusantium, amet incidunt nobis.</p>
+        </div>
+    </div>
+
+</div>
+
+
+<hr style="color: black">
+
+<div id="Mision" class="container text-center">
+    <div class="row">
+        <div class="col-12">
+            <p class="fs-1 text-center fw-bold">Misión</p>
+            <p class="fs-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, numquam sit porro voluptas, repudiandae et commodi dolores perspiciatis iure sapiente, aut eum vel saepe nobis. Quisquam illo molestiae rem saepe.</p>
+            <p class="fs-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aut voluptas numquam pariatur! Error quis voluptates obcaecati necessitatibus sapiente impedit, at neque natus tempora magni eveniet ab consequuntur cupiditate omnis.</p>
+            <p class="fs-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, numquam sit porro voluptas, repudiandae et commodi dolores perspiciatis iure sapiente, aut eum vel saepe nobis. Quisquam illo molestiae rem saepe.</p>
+            <p class="fs-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aut voluptas numquam pariatur! Error quis voluptates obcaecati necessitatibus sapiente impedit, at neque natus tempora magni eveniet ab consequuntur cupiditate omnis.</p>
+        </div>
+    </div>
+</div>
+
+<hr style="color: black">
+
+<!-- SECCION CARTA -->
+<div id="Carta" class="container-fluid centradoPersonal">
+    <p class="fs-1">Nuestra Carta</p>
+    <p class="fs-3 m-5 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit, labore, porro nam
+        dolorem voluptatibus consequatur, ullam facere pariatur asperiores possimus nisi sed? Eius expedita quisquam
+        modi! In, nihil maiores.</p>
+</div>
+
+<section class="bg-light py-4 my-3">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-12">
+                <h2 class="mb-3 text-center">Nuestra Oferta Gastronómica</h2>
+            </div> -->
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card my-3">
+
+                    <img src="IMG\Papas.jpg" class="card-image-top" alt="thumbnail">
+
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#" class="text-secondary">Papas</a></h3>
+                        <p class="card-text">Aquí iría una descripción del plato y sin dudas podrían ir sugerencias para bebidas o tragos que acompañen. </p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card my-3">
+
+                    <img src="IMG\Carne.jpg" class="card-image-top" alt="thumbnail">
+
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#" class="text-secondary">Carnes</a></h3>
+                        <p class="card-text">Aquí iría una descripción del plato y sin dudas podrían ir sugerencias para bebidas o tragos que acompañen.</p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card my-3">
+
+                    <img src="IMG\Papas.jpg" class="card-image-top" alt="thumbnail">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#" class="text-secondary">Papas</a></h3>
+                        <p class="card-text">Aquí iría una descripción del plato y sin dudas podrían ir sugerencias para bebidas o tragos que acompañen.</p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card my-3">
+                    <img src="IMG\Rabas.jpg" class="card-image-top" alt="thumbnail">
+                    <div class="card-body  text-center">
+                        <h3 class="card-title"><a href="#" class="text-secondary">Rabas</a></h3>
+                        <p class="card-text">Aquí iría una descripción del plato y sin dudas podrían ir sugerencias para bebidas o tragos que acompañen.</p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card my-3">
+
+                    <img src="IMG\Tragos.jpg" class="card-image-top" alt="thumbnail">
+                    <div class="card-body  text-center">
+                        <h3 class="card-title"><a href="#" class="text-secondary">Tragos</a></h3>
+                        <p class="card-text">Aquí iría una descripción del plato y sin dudas podrían ir sugerencias para bebidas o tragos que acompañen.</p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card my-3">
+
+                    <img src="IMG\Tapas.jpg" alt="thumbnail">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title"><a href="#" class="text-secondary">Tapas</a></h3>
+                        <p class="card-text">Aquí iría una descripción del plato y sin dudas podrían ir sugerencias para bebidas o tragos que acompañen.</p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+
+<div id="Contacto"  class="container-fluid centradoPersonal">
+    <div  id="Footer" class="row p-2 bg-dark text-white bg-black">
+        <div class="col-xs-12 col-md-4 col-lg-4">
+            <p class="h4">Nordoeste</p>
+            <p class="text-secondary">Río Negro, Argentina</p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4">
+            <p class="h4">Legales</p>
+            <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Términos y condiciones</a>
+            </div>
+            <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Políticas de uso</a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4">
+            <p class="h4">Contacto</p>
+            <div class="mb-2">
+                <a target="_blank" class="text-secondary text-decoration-none" href="#">Facebook</a>
+            </div>
+            <div class="mb-2">
+                <a target="_blank" class="text-secondary text-decoration-none" href="#">Instagram</a>
+            </div>
+        </div>
+
+        <div class="col-xs-12 ">
+            <p class="text-white text-center">@MOMENTUM - Todos los derechos reservados</p>
+        </div>
+    </div>
+
+</div>
+
+
+   
+<!-- jQuery and Bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+crossorigin="anonymous"></script>
+
+<!-- Script para BTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+crossorigin="anonymous"></script>
+
+
+<!-- Función jQuery para cerrar el navbar automáticamente -->
+<!-- <script>
+$('.nav-link').on('click', function () {
+    $('.collapse').collapse('hide');
+});
+</script> -->
+
+<script>
+    $('.nav-link').on('click', function () {
+        $('.offcanvas-end').collapse('hide');
+    });
+    </script>
+
+
+
+</body>
+</html>

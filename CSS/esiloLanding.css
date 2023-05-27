@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+/*la altura del video y sus relaciones porcentuales podría ser una variable SAS*/
+.navbar{
+    box-shadow: 5px 5px 5px 5px grey;/*Sobra bajo en Nav*/
+}
+
+.offcanvas-body{
+    background-color: rgba(178, 128, 128, 0.5);/*Color meno Hamb*/
+    font-size: 1.5rem;/*tamaño de los item del menú hamb*/
+}
+
+.offcanvas-end{
+    /*background-color: rgba(178, 128, 128, 0.7);*/
+    margin: 10px 20px;/*Esto deja un margen en la ventana emergente del menú*/
+    text-align: center;/*esto centra el meno hamburguesa*/
+}
+
+.video-container{
+    position: absolute;
+    z-index: -10;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: calc(100vw * 0.5625);
+    overflow: hidden;
+}
+
+#video-portada{
+    position: absolute;
+    top: 30px;
+    left:0;
+    width: 100%;
+}
+
+.header{
+    height: calc(100vw * 0.5625);
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px #999;
+
+}
+
+h1{
+    line-height: calc(100vw * (0.5625/2));;
+}
+
+#botonPortada{
+    text-shadow: 2px 2px 2px black;
+    font-size: 30px;
+    background-color: rgba(128,128,128,.2);
+    
+}
+
+.centradoPersonal{
+    text-align: center;
+}
+
+.img-circle{
+    border-radius: 50%;
+    max-height: 40vh;
+}
+
+
+/*ver esta sombre en la parte superior*/
+#Footer{
+    box-shadow: 5px 5px 3px 13px grey;
+}
+
+.containerGaleria{
+    display: inline-block;
+}
+
+
+
+
+/*::::::galeria de IMG:::::::::*/
+.card-img-top {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.card-title a:link {
+    font-size: 30px;
+    background-color: transparent;
+    color: #000000;
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
