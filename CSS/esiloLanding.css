@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 /*la altura del video y sus relaciones porcentuales podría ser una variable SAS*/
@@ -10,7 +10,7 @@
 }
 
 .offcanvas-body{
-    background-color: rgba(178, 128, 128, 0.5);/*Color meno Hamb*/
+    background-color: rgba(178, 128, 128, 0.5);/*Color menu Hamb*/
     font-size: 1.5rem;/*tamaño de los item del menú hamb*/
 }
 
@@ -65,7 +65,6 @@ h1{
     max-height: 40vh;
 }
 
-
 /*ver esta sombre en la parte superior*/
 #Footer{
     box-shadow: 5px 5px 3px 13px grey;
@@ -74,9 +73,6 @@ h1{
 .containerGaleria{
     display: inline-block;
 }
-
-
-
 
 /*::::::galeria de IMG:::::::::*/
 .card-img-top {
